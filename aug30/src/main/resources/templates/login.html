@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Index</title>
+<link rel="stylesheet" type="text/css" th:href="@{./css/thymeleaf.css}">
+<link rel="stylesheet" type="text/css" th:href="@{./css/login.css}">
+</head>
+<body>
+	<th:block th:insert="~{/menu.html :: menu}"></th:block>
+	<h1>로그인 화면 입니다.</h1>
+	<div class="Login-content">
+		<img th:alt="사진없음" th:src="@{./img/쿠로미.png}">
+		<form th:action="@{./login}" th:method="@{post}">
+			<input name="id" id="id" type="text" placeholder="로그인" required="required">
+			<input name="pw" id="pw" type="password" placeholder="비밀번호" required="required">
+			<button type="submit">로그인</button>
+		</form>
+	</div>
+</body>
+</html>

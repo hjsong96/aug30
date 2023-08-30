@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"com.hadine.web","l":"Aug30Application"},{"p":"com.hadine.controller","l":"IndexController"}]
